@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Recycling in the UK</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<link rel="import" href="2014_RecyclingRate.html">
+	
+		<style>
+			.btn {
+				margin: 30px;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<div class="new-title">
+		<div class="row">
+			<div class="col col-md-4 ">
+				<img src="files/pdc_logo.png" style=" height:150px"/>
+				<a href="https://data.gov.uk/dataset/5aea1caf-3e38-4d57-b321-ba34eb762b6e/local-authority-collected-waste-management-statistics" target="_blank"><img src="files/defra_logo.png" style="height:150px"/></a>
+			</div>
+			<div class="col col-md-8">				
+					<div class="row">
+						<h1 style="font-size:40px">HOUSEHOLD RECYCLING IN THE UK (England only)</h1>
+					</div>
+					<div class="row">
+						<h5>Click the links to explore the maps for recycling in the UK</h5>
+					</div>
+					<div class="row">
+						<h5>Use the <strong>back</strong> button at the top of your browser window to navigate back to this page</h5>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<div class="content" id="2014_RecyclingRate" style="padding-top:30px">
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<a href="files/2014_RecyclingRate.html" class="btn btn-primary">2014-15 Recycling Rate</a>
+				</div>
+				<div class="col-md-4">
+					<a href="files/2015_RecyclingRate.html" class="btn btn-primary">2015-16 Recycling Rate</a>
+				</div>
+				<div class="col-md-4">
+					<a href="files/2016_RecyclingRate.html" class="btn btn-primary">2016-17 Recycling Rate</a>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<a href="files/percentageIncrease20142015.html" class="btn btn-danger">2014-15 Recycling Rate Percentage Increase</a>
+				</div>
+				<div class="col-md-4">
+					<a href="files/percentageIncrease20152016.html" class="btn btn-danger">2015-16 Recycling Rate Percentage Increase</a>
+				</div>
+				<div class="col-md-4">
+					<a href="files/percentageIncrease20142016.html" class="btn btn-danger">2014-16 Recycling Rate Percentage Increase</a>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<a href="files/2014_household_total_waste.html" class="btn btn-success">2014-15 Total Waste (tonne/per person)</a>
+				</div>
+				<div class="col-md-4">
+					<a href="files/2015_household_total_waste.html" class="btn btn-success">2015-16 Total Waste (tonne/per person)</a>
+				</div>
+				<div class="col-md-4">
+					<a href="files/2016_household_total_waste.html" class="btn btn-success">2016-17 Total Waste (tonne/per person)</a>
+				</div>
+			</div>
+			
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<a href="files/2014_household_waste_sent_for_recycling_composting_reuse.html" class="btn btn-warning">2014-15 Total Waste sent for recycling (tonne/per person)</a>
+				</div>
+				<div class="col-md-4">
+					<a href="files/2015_household_waste_sent_for_recycling_composting_reuse.html" class="btn btn-warning">2015-16 Total Waste sent for recycling (tonne/per person)</a>
+				</div>
+				<div class="col-md-4">
+					<a href="files/2016_household_waste_sent_for_recycling_composting_reuse.html" class="btn btn-warning">2016-17 Total Waste sent for recycling (tonne/per person)</a>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<a href="files/2014_household_waste_not_sent_for_recycling.html" class="btn btn-info">2014-15 Total Waste not sent for recycling (tonne/per person)</a>
+				</div>
+				<div class="col-md-4">
+					<a href="files/2015_household_waste_not_sent_for_recycling.html" class="btn btn-info">2015-16 Total Waste not sent for recycling (tonne/per person)</a>
+				</div>
+				<div class="col-md-4">
+					<a href="files/2016_household_waste_not_sent_for_recycling.html" class="btn btn-info">2016-17 Total Waste not sent for recycling (tonne/per person)</a>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+
+	<script>
+		
+		function reload(){
+			 var year = document.getElementById('year_select').value;
+			console.log(year);
+			 var dataPoint = document.getElementById('dataPointSelect').value;
+			console.log(dataPoint);
+			var name = year + "_" + dataPoint;
+			doument.getElementById(name).style = "display:block";
+		}
+		
+	
+		 
+	</script>
+
+</html>
